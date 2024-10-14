@@ -1,0 +1,111 @@
+/* Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+  font-family: "Outfit", sans-serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 25%;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 11px;
+  padding: 1.5rem;
+}
+.equliprium {
+  width: 100%;
+  border-radius: 11px;
+}
+.heading-tertiary {
+    margin-top: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+.para {
+    margin: 1.5rem  0;
+    color:  hsl(215, 51%, 70%);
+    font-size: 18px;
+    
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    
+}
+.line1 {
+    color:  hsl(178, 100%, 50%);
+}
+.profile {
+    border-top: 1px solid  hsl(215, 32%, 27%);
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    color:  hsl(215, 51%, 70%);
+}
+.ptofile-img {
+    height: 40px;
+    border: 1px solid  hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+span {
+    color: hsl(0, 0%, 100%);
+}
+@media (max-width: 850px) {
+    .container {
+    width: 40%;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+    width: 60%;
+    }
+}
+@media (max-width: 475px) {
+    .container {
+    width: 80%;
+    }
+}
